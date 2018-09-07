@@ -11,7 +11,6 @@ library(dbConnect)
 library(RPostgreSQL)
 library(reshape)
 library(shinyjs)
-library(as_tibble)
 
 
     
