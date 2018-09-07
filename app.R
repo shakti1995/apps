@@ -14,7 +14,7 @@ library(shinyjs)
 library(profvis)
 library(as_tibble)
 
-profvis({
+
     
     drv <- dbDriver("PostgreSQL")
     con <- dbConnect(drv, dbname = 'credi_health_production',
@@ -978,5 +978,4 @@ profvis({
     } 
     
     
-    runApp(shinyApp(ui = ui, server = server))
-    })
+    shinyApp(ui = ui, server = server)
